@@ -32,7 +32,7 @@ This can vary between /0 to /32.
 The other way of representing masks is:
 - `/24` → `255.255.255.0`
 
-- `/26`` → `255.255.255.192`
+- `/26` → `255.255.255.192`
 
 
 The way we cant convert the masks is very simple. For each octet we have a range between 0 to 255. For example:
