@@ -36,10 +36,10 @@ The other way of representing masks is:
 
 
 The way we cant convert the masks is very simple. For each octet we have a range between 0 to 255. For example:
-- `128 64 32 16 8 4 2 1` ->  All these 8 numbers added together are 255.
+- `128 64 32 16 8 4 2 1` →  All these 8 numbers added together are 255.
 
 So if i want to know what /20 is, we already know that 8 plus 8 is 16 so we dont need to worry about that, now 16 plus 8 is 24 that means we already passed the goal of 20, so what do we do:
-`255.255.0.0` is 16 so we have to change the 3rd octet, 16 to 20 goes four so we count
+`255.255.0.0` is 16 so we have to change the 3rd octet, 16 to 20 goes four so we count.
 
     1  2  3  4
 - `128 64 32 16 8 4 2 1`
