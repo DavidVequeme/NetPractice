@@ -41,7 +41,8 @@ The way we cant convert the masks is very simple. For each octet we have a range
 So if i want to know what /20 is, we already know that 8 plus 8 is 16 so we dont need to worry about that, now 16 plus 8 is 24 that means we already passed the goal of 20, so what do we do:
 `255.255.0.0` is 16 so we have to change the 3rd octet, 16 to 20 goes four so we count.
 
-- `1↓ 2↓ 3↓ 4↓`
+- ` 1  2  3  4`
+-   ↓  ↓  ↓  ↓
 - `128 64 32 16 8 4 2 1`
 
 That gives us `255.255.240.0`.
